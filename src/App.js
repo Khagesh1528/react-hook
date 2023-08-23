@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import React ,{useState} from 'react';
 
 function App() {
+  const [email,setEmail] = useState();
+  const [name,setName] = useState();
+
+  function handlerEmail(e){
+      setEmail(e.target.value)
+  }
+  function handlerName (e){
+    setName(e.target.value)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <input value={email} onChange={handlerEmail}>
+        
+      </input>
+      <input value={name} onChange={handlerName}>
+
+      </input>
+
+      <p>Email: {email}</p>
+      <p>Name : {name}</p>
     </div>
   );
 }

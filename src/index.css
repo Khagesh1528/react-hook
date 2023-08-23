@@ -1,13 +1,62 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  width: 150px;
+  height: 150px;
+ 
+  background-color: grey;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: 50px;
 }
+.outerCircle{
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    background-color: aliceblue;
+    position: absolute;
+   
+}
+
+.innerCircle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: grey;
+    position: absolute;
+    margin-top: 23%;
+    margin-left: 23%;
+}
+
+.innerCircle img{
+  color: grey;
+  width: 30px;
+  height: 30px;
+}
+.next{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 80px;
+}
+.prev{
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -32px;
+}
+.play{
+  position: absolute;
+  margin-top: 82px;
+  margin-left: 24px;
+ 
+}
+
+.menu{
+  position: absolute;
+  margin-top: -32px;
+  margin-left: 24px;
+ 
+}
+
