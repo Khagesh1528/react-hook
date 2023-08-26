@@ -14,6 +14,8 @@ function CreatePost() {
         console.log('Subtitle', subTitle.value);
         console.log('Content', content.value);
 
+//* Adding Post In FireStore *//
+
         firestore.collection('posts').add({
             title: title.value,
             subTitle: subTitle.value,

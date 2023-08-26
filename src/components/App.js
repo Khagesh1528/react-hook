@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/post/:postId" component={PostDetail} />
+        <Route exact path="/posts/:postId" component={PostDetail} />
         <Route exact path="/create-post" component={CreatePost} />
       </Switch>
     </div>
