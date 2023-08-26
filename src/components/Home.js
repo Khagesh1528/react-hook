@@ -6,13 +6,18 @@ function Home() {
     const [posts, setPost] = useState([]);
 
     useEffect(() => {
-        firestore.collection('posts').get().then((snapshot) => {
-            const posts = snapshot.docs.map((doc) => ({
-                id: doc.id,
-                ...doc.data()
-            }));
-            console.log('Posts', posts);
-            setPost(posts);
+        firestore
+            .collection('posts')
+                .get()
+                    .then((snapshot) => {
+                        const posts = snapshot.docs.map((doc) => ({
+                            id: doc.id,
+                            ...doc.data()
+
+                            
+                         }));
+                        console.log('Posts', posts);
+                        setPost(posts);
         });
     }, []);
 
